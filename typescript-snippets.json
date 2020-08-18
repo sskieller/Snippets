@@ -1,0 +1,20 @@
+{
+  "Angular Component with Inline Template, OnPush": {
+    "prefix": "a-component-inline-on-push",
+    "description": "Angular component with an inline template, OnPush",
+    "body": [
+      "import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplate: `$0`,",
+      "\tchangeDetection: ChangeDetectionStrategy.OnPush,",
+      "})",
+      "export class ${2:Name}Component implements OnInit {",
+      "\tconstructor() {}",
+      "",
+      "\tngOnInit(): void {}",
+      "}"
+    ]
+  },
+}
